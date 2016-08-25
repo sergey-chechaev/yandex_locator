@@ -1,8 +1,6 @@
 # YandexLocator
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/yandex_locator`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Ruby gem for Yandex locator. Yandex locator servic that find mobile devices in a region delineated by a circle. Service return longitude, latitude and precision. 
 
 ## Installation
 
