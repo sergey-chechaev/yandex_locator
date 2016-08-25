@@ -34,6 +34,7 @@ Make request
 ```ruby
   conn = YandexLocator::Client.new
   result = conn.lookup(ip: "109.252.52.39")
+  # => {"position"=>{"altitude"=>0.0, "altitude_precision"=>30.0, "latitude"=>55.75395965576172, "longitude"=>37.62039184570312, "precision"=>100000.0, "type"=>"ip"}}
 ```
 
 
