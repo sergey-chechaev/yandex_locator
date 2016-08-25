@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/sergey-chechaev/yandex_locator.svg?branch=master)](https://travis-ci.org/sergey-chechaev/yandex_locator)
+
 # YandexLocator
 
 Ruby gem for Yandex locator (https://tech.yandex.ru/locator/). Yandex locator service that find mobile devices in a region delineated by a circle. Service return longitude, latitude and precision. 
