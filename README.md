@@ -31,6 +31,13 @@ Configure gem credentials
  end
 ```
 
+Make request
+
+```ruby
+  conn = YandexLocator::Client.new
+  result = conn.lookup(ip: "109.252.52.39")
+```
+
 
 ## Development
 

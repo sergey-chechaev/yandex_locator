@@ -5,7 +5,7 @@ describe YandexLocator do
     expect(YandexLocator::VERSION).not_to be nil
   end
 
-  context ".find_geo_lat_long_session" do
+  context "configiration" do
 
     it 'check default configuration' do
       expect(YandexLocator.configuration.version).to eq "1.0"
@@ -20,7 +20,6 @@ describe YandexLocator do
       expect(YandexLocator.configuration.api_key).to eq("test_api_key")
       expect(YandexLocator.configuration.version).to eq("2.0")
     end
-
   end
 
 end
