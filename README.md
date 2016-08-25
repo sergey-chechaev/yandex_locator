@@ -1,6 +1,6 @@
 # YandexLocator
 
-Ruby gem for Yandex locator. Yandex locator servic that find mobile devices in a region delineated by a circle. Service return longitude, latitude and precision. 
+Ruby gem for Yandex locator (https://tech.yandex.ru/locator/). Yandex locator servic that find mobile devices in a region delineated by a circle. Service return longitude, latitude and precision. 
 
 ## Installation
 
