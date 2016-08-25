@@ -2,6 +2,7 @@
 [![Build Status](https://travis-ci.org/sergey-chechaev/yandex_locator.svg?branch=master)](https://travis-ci.org/sergey-chechaev/yandex_locator)
 [![Code Climate](https://codeclimate.com/github/sergey-chechaev/yandex_locator.svg)](https://codeclimate.com/github/sergey-chechaev/yandex_locator)
 [![Dependency Status](https://www.versioneye.com/user/projects/57bf6ec8968d640033602245/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/57bf6ec8968d640033602245)
+[![Test Coverage](https://codeclimate.com/github/sergey-chechaev/yandex_locator/badges/coverage.svg)](https://codeclimate.com/github/sergey-chechaev/yandex_locator/coverage)
 
 # YandexLocator
 
