@@ -22,7 +22,15 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Configure gem credentials 
+
+```ruby
+ YandexLocator.configure do |config|
+    config.api_key = ENV['YANDEX_API_KEY']
+    config.version = "1.0"
+ end
+```
+
 
 ## Development
 

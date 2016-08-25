@@ -5,7 +5,7 @@ RSpec.configure do |config|
   config.before(:all) do
     YandexLocator.configure do |config|
       config.api_key = ENV['YANDEX_API_KEY']
-      config.version = "0.1"
+      config.version = "1.0"
     end
   end
 end

@@ -1,4 +1,5 @@
 require "yandex_locator/version"
+require "yandex_locator/configuration"
 
 module YandexLocator
   class << self
