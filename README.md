@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/sergey-chechaev/yandex_locator.svg?branch=master)](https://travis-ci.org/sergey-chechaev/yandex_locator)
+[![Code Climate](https://codeclimate.com/github/sergey-chechaev/yandex_locator.svg)](https://codeclimate.com/github/sergey-chechaev/yandex_locator)
 
 # YandexLocator
 
