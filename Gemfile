@@ -1,4 +1,15 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in yandex_locator.gemspec
+gem 'rake', '> 11.0.1', '< 12.0'
+
+group :development do
+  gem 'pry'
+end
+
+group :test do
+  gem 'rspec', '~> 3.0.0'
+  gem 'vcr', '~> 2.9.2'
+  gem 'codeclimate-test-reporter'
+end
+
 gemspec
