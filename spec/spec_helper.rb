@@ -1,9 +1,9 @@
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 require 'yandex_locator'
-require 'codeclimate-test-reporter'
 require 'vcr'
+require 'coveralls'
 
-CodeClimate::TestReporter.start
+Coveralls.wear!
 
 VCR.configure do |c|
   c.cassette_library_dir = 'spec/cassettes'
