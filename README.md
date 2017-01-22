@@ -66,6 +66,17 @@ Make request
   result.position
   # => {"altitude"=>0.0, "altitude_precision"=>30.0, "latitude"=>56.87141036987305, "longitude"=>60.61107635498047, "precision"=>1066.041137695312, "type"=>"gsm"}
 ```
+Location Handle
+```ruby
+  result = client.lookup(ip: '176.69.53.253')
+  if result.position
+    # do thangs....
+  else
+    p result.error['text']
+  end
+```
+
+
 
 
 ## Development
