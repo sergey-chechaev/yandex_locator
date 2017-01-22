@@ -8,6 +8,8 @@
 
 Ruby gem for Yandex locator (https://tech.yandex.ru/locator/). Yandex locator is a service that finds mobile devices in a region delineated by a circle. The service returns longitude, latitude and precision. 
 
+Yandex locator can lookup by IP, wifi networks, gsm cells
+
 ## Installation
 
 Add this line to your application's Gemfile:
