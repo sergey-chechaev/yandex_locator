@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://api.lbs.yandex.net/geolocation?json=%7B%22common%22:%7B%22version%22:%221.0%22,%22api_key%22:%22AM3hulcBAAAALCIoUgMA1tGl3THC8zRHnxqs4uUbe3Na24oAAAAAAAAAAADAnR_r59oxhQkzgT2lpjSLfcsVVg==%22%7D,%22wifi_networks%22:%5B%7B%22mac%22:%22ec:43:f6:d1:a2:1e%22%7D%5D%7D
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.8.1
+      Date:
+      - Sun, 22 Jan 2017 19:21:45 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '212'
+      Connection:
+      - keep-alive
+      X-Yarequestid:
+      - 851e3ec7-c442-4a32-8b48-6b499fde8153
+    body:
+      encoding: UTF-8
+      string: |
+        {
+           "position" : {
+              "altitude" : 0.0,
+              "altitude_precision" : 30.0,
+              "latitude" : 59.94974517822266,
+              "longitude" : 30.26737022399902,
+              "precision" : 140.0,
+              "type" : "wifi"
+           }
+        }
+    http_version: 
+  recorded_at: Sun, 22 Jan 2017 19:21:45 GMT
+recorded_with: VCR 2.9.3

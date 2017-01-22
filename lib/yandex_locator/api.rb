@@ -2,7 +2,6 @@ require "yandex_locator/configuration"
 
 module YandexLocator
   module API
-
     def post(url, options = {})
       request :post, url, options
     end
@@ -11,7 +10,7 @@ module YandexLocator
       connection(url: YandexLocator.configuration.url_prefix)
     end
 
-    def connection(url: )
+    def connection(url:)
       Faraday.new(url) do |builder|
         builder.request  :url_encoded
         builder.response :logger
@@ -32,9 +31,11 @@ module YandexLocator
     end
 
     def request_data(data)
-      {common:
-        {version: YandexLocator.configuration.version,
-         api_key: YandexLocator.configuration.api_key
+      {
+        common:
+        {
+          version: YandexLocator.configuration.version,
+          api_key: YandexLocator.configuration.api_key
         }
       }.merge(data)
     end
@@ -45,5 +46,3 @@ module YandexLocator
     end
   end
 end
-
-

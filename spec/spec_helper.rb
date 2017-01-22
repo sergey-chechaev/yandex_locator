@@ -1,14 +1,21 @@
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 require 'yandex_locator'
-require "codeclimate-test-reporter"
+require 'codeclimate-test-reporter'
+require 'vcr'
+
 CodeClimate::TestReporter.start
+
+VCR.configure do |c|
+  c.cassette_library_dir = 'spec/cassettes'
+  c.hook_into :webmock
+  c.configure_rspec_metadata!
+end
 
 RSpec.configure do |config|
   config.before(:all) do
-    YandexLocator.configure do |config|
-      config.api_key = ENV['YANDEX_API_KEY']
-      config.version = "1.0"
+    YandexLocator.configure do |c|
+      c.api_key = ENV['YANDEX_API_KEY']
+      c.version = '1.0'
     end
   end
 end
-

@@ -5,21 +5,21 @@ describe YandexLocator do
     expect(YandexLocator::VERSION).not_to be nil
   end
 
-  context "configiration" do
-
+  context 'configiration' do
     it 'check default configuration' do
-      expect(YandexLocator.configuration.version).to eq "1.0"
+      expect(YandexLocator.configuration.version).to eq '1.0'
     end
 
-    it 'check set new configuration value' do
-      YandexLocator.configure do |config|
-        config.api_key = "test_api_key"
-        config.version = "2.0"
+    describe 'class level configuration' do
+      it 'api_key' do
+        YandexLocator::Client.new(api_key: 'test api key')
+        expect(YandexLocator.configuration.api_key).to include('test api key')
       end
 
-      expect(YandexLocator.configuration.api_key).to eq("test_api_key")
-      expect(YandexLocator.configuration.version).to eq("2.0")
+      it 'version' do
+        YandexLocator::Client.new(version: 'test version')
+        expect(YandexLocator.configuration.version).to include('version')
+      end
     end
   end
-
 end
