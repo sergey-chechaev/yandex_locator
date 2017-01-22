@@ -2,6 +2,7 @@ $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 require 'yandex_locator'
 require 'vcr'
 require 'coveralls'
+require 'dotenv/load'
 
 Coveralls.wear!
 
@@ -14,7 +15,7 @@ end
 RSpec.configure do |config|
   config.before(:all) do
     YandexLocator.configure do |c|
-      c.api_key = ENV['YANDEX_API_KEY']
+      c.api_key = ENV['YANDEX_TEST_API_KEY']
       c.version = '1.0'
     end
   end

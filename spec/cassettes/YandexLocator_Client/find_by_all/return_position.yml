@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: http://api.lbs.yandex.net/geolocation?json=%7B%22common%22:%7B%22version%22:%221.0%22,%22api_key%22:%22AM3hulcBAAAALCIoUgMA1tGl3THC8zRHnxqs4uUbe3Na24oAAAAAAAAAAADAnR_r59oxhQkzgT2lpjSLfcsVVg==%22%7D,%22wifi_networks%22:%5B%7B%22mac%22:%22ec:43:f6:d1:a2:1e%22%7D%5D,%22gsm_cells%22:%5B%7B%22countrycode%22:250,%22operatorid%22:99,%22cellid%22:12082,%22lac%22:25254%7D%5D,%22ip%22:%7B%22address_v4%22:%22178.247.233.3%22%7D%7D
+    uri: http://api.lbs.yandex.net/geolocation?json=%7B%22common%22:%7B%22version%22:%221.0%22,%22api_key%22:%22AKAohVgBAAAAUK3sQwICzS7H_b7e0Y6yksDwz7S9894dxW8AAAAAAAAAAABe36EUWpPIX-RRHHm8N3-w8pGQRw==%22%7D,%22wifi_networks%22:%5B%7B%22mac%22:%22ec:43:f6:d1:a2:1e%22%7D%5D,%22gsm_cells%22:%5B%7B%22countrycode%22:250,%22operatorid%22:99,%22cellid%22:12082,%22lac%22:25254%7D%5D,%22ip%22:%7B%22address_v4%22:%22178.247.233.3%22%7D%7D
     body:
       encoding: UTF-8
       string: ''
@@ -25,7 +25,7 @@ http_interactions:
       Server:
       - nginx/1.8.1
       Date:
-      - Sun, 22 Jan 2017 20:01:14 GMT
+      - Sun, 22 Jan 2017 22:02:50 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -33,7 +33,7 @@ http_interactions:
       Connection:
       - keep-alive
       X-Yarequestid:
-      - f299543d-ef61-4ff6-bf94-641eb4d55d19
+      - fb4d02b2-bd4b-4f5f-bbab-cd0a9ba1b764
     body:
       encoding: UTF-8
       string: |
@@ -48,5 +48,5 @@ http_interactions:
            }
         }
     http_version: 
-  recorded_at: Sun, 22 Jan 2017 20:01:14 GMT
+  recorded_at: Sun, 22 Jan 2017 22:02:50 GMT
 recorded_with: VCR 2.9.3

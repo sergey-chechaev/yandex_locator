@@ -3,7 +3,7 @@ require 'spec_helper'
 describe YandexLocator::Client do
 
   before do
-    @client = YandexLocator::Client.new(api_key: ENV['YANDEX_API_KEY'])
+    @client = YandexLocator::Client.new(api_key: ENV['YANDEX_TEST_API_KEY'])
   end
 
   describe 'find by ip', :vcr do

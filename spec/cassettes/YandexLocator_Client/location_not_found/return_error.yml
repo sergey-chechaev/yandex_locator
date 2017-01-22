@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: http://api.lbs.yandex.net/geolocation?json=%7B%22common%22:%7B%22version%22:%221.0%22,%22api_key%22:%22AM3hulcBAAAALCIoUgMA1tGl3THC8zRHnxqs4uUbe3Na24oAAAAAAAAAAADAnR_r59oxhQkzgT2lpjSLfcsVVg==%22%7D,%22ip%22:%22176.69.53.253%22%7D
+    uri: http://api.lbs.yandex.net/geolocation?json=%7B%22common%22:%7B%22version%22:%221.0%22,%22api_key%22:%22AKAohVgBAAAAUK3sQwICzS7H_b7e0Y6yksDwz7S9894dxW8AAAAAAAAAAABe36EUWpPIX-RRHHm8N3-w8pGQRw==%22%7D,%22ip%22:%22176.69.53.253%22%7D
     body:
       encoding: UTF-8
       string: ''
@@ -25,7 +25,7 @@ http_interactions:
       Server:
       - nginx/1.8.1
       Date:
-      - Sun, 22 Jan 2017 13:25:36 GMT
+      - Sun, 22 Jan 2017 22:02:50 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -33,7 +33,7 @@ http_interactions:
       Connection:
       - keep-alive
       X-Yarequestid:
-      - eaf8a25e-f4c1-481d-a1ac-a0478aacce2b
+      - 1cbc822c-4aa3-4b2b-93db-477ac272b96f
     body:
       encoding: UTF-8
       string: |
@@ -44,5 +44,5 @@ http_interactions:
            }
         }
     http_version: 
-  recorded_at: Sun, 22 Jan 2017 13:25:35 GMT
+  recorded_at: Sun, 22 Jan 2017 22:02:50 GMT
 recorded_with: VCR 2.9.3

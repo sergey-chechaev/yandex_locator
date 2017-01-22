@@ -11,6 +11,7 @@ group :test do
   gem 'vcr', '~> 2.9.2'
   gem 'webmock', '>= 1.9', '< 2.0.0'
   gem 'coveralls', require: false
+  gem 'dotenv-rails'
 end
 
 gemspec
