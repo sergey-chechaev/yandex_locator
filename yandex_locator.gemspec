@@ -12,6 +12,7 @@ Gem::Specification.new do |spec|
   spec.summary       = %q{ruby gem for yandex locator}
   spec.description   = %q{ruby gem for yandex locator}
   spec.homepage      = "https://github.com/sergey-chechaev/yandex_locator.git"
+  spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "exe"
