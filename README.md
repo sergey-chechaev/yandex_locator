@@ -30,11 +30,16 @@ Configure gem credentials
 
 ```ruby
  YandexLocator.configure do |config|
-    config.api_key = ENV['YANDEX_API_KEY']
-    config.version = "1.0"
+   config.api_key = 'api key'
+   config.version = "1.0"
  end
 ```
+or
 
+```ruby
+  client = YandexLocator::Client.new(api_key: 'api key', version: '1.0')
+  client.lookup(ip: { address_v4: '178.247.233.3' })
+```
 Make request
 
 ```ruby
