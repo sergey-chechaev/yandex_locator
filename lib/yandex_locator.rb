@@ -8,17 +8,18 @@ require 'yandex_locator/api'
 module YandexLocator
   class << self
     attr_accessor :configuration
+
+    def configuration
+      @configuration ||= Configuration.new
+    end
+
+    def reset
+      @configuration = Configuration.new
+    end
+
+    def configure
+      yield(configuration)
+    end
   end
 
-  def self.configuration
-    @configuration ||= Configuration.new
-  end
-
-  def self.reset
-    @configuration = Configuration.new
-  end
-
-  def self.configure
-    yield(configuration)
-  end
 end

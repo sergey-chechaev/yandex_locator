@@ -8,7 +8,6 @@ module YandexLocator
     }.freeze
 
     def initialize
-      @key = nil
       @version = DEFAULT_CONF[:version]
       @url_prefix = DEFAULT_CONF[:url_prefix]
     end
