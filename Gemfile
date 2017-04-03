@@ -1,17 +1,17 @@
 source 'https://rubygems.org'
 
-gem 'rake', '> 11.0.1', '< 12.0'
+gem 'rake'
 
 group :development do
   gem 'pry'
 end
 
 group :test do
-  gem 'rspec', '~> 3.0.0'
-  gem 'vcr', '~> 2.9.2'
-  gem 'webmock', '>= 1.9', '< 2.0.0'
   gem 'coveralls', require: false
   gem 'dotenv-rails'
+  gem 'rspec', '~> 3.5.0'
+  gem 'vcr', '~> 3.0.3'
+  gem 'webmock', '~> 2.3.2'
 end
 
 gemspec
